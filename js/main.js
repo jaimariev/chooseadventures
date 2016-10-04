@@ -35,7 +35,7 @@ $(document).ready(function(){
     if(decideNext == true){
       decideNext = "Joel agrees and goes with Tess to end Roberts life.";
     } else {
-      alert("Joel decides to stay and the story ends here.");
+      decideNext = "Joel decides to stay and the story ends here.";
       location.reload();
     }
     $("#beginStory").append(decideNext + "<br />");
@@ -107,7 +107,13 @@ $(document).ready(function(){
   });
 
   $("#theEnd").on("click", function() {
-    alert("Thank you for playing this version! Look out for the extended version coming soon!");
+    var tbContinued = confirm("Thank you for playing this version! Look out for the extended version coming soon!");
+    if(tbContinued == true){
+      $("#beginStory").toggleClass("displayNone");
+      location.reload();
+    } else {
+      tbContinued = location.reload();
+    };
   });
 
 
