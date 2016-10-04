@@ -1,0 +1,99 @@
+body {
+  background:#000 url("../images/thelastofus.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#mainContainer {
+  width: 1000px;
+  max-height: 1000px;
+  margin: auto;
+}
+
+#characterHealth {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+#characterHealth p {
+  width: 300px;
+  height: 50px;
+  text-transform: uppercase;
+  color: white;
+  background: black;
+  line-height: 50px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+  opacity: .8;
+}
+
+#healthBar[value] {
+  -webkit-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  margin-left: 5px;
+  display: inline-block;
+  width: 165px;
+  height: 10px;
+}
+
+#storyBox, #actionBox {
+  width: 300px;
+  height: 400px;
+  border: 2px solid black;
+  background: white;
+  position: relative;
+  margin-top: 150px;
+  opacity: .7;
+  float: left;
+  border-radius: 3px;
+  padding-left: 15px;
+  overflow: scroll;
+}
+
+#beginStory {
+  width: 260px;
+  margin: auto;
+}
+
+#startGame, #actionBtn, #keepGoing, #keepGoing2, #keepGoing3, #keepGoing4, #theEnd {
+  width: 180px;
+  height: 60px;
+  border-radius: 10px;
+  border: 1px solid white;
+  background: black;
+  color: white;
+  margin: 55px;
+  cursor: pointer;
+  position: absolute;
+}
+
+#actionBtn, #keepGoing, #keepGoing2, #keepGoing3, #keepGoing4, #theEnd {
+  display: none;
+}
+
+#storyBox {
+  margin-left: 10px;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+#actionBox {
+  float: right;
+}
+
+.displayNone {
+  display: none;
+}
+
+.displayBlock {
+  display: block;
+}
