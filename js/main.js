@@ -1,6 +1,8 @@
-window.alert("20 years ago, a zombie apocolypse plagued the world and Joel lost his daughter at the start of quarantine.. 20 years later, he is living in this plagued world as a mercenary... This is his journey.");
+
 
 $(document).ready(function(){
+  window.alert("20 years ago, a zombie apocolypse plagued the world and Joel lost his daughter at the start of quarantine.. 20 years later, he is living in this plagued world as a mercenary... This is his journey.");
+
 
   $("#startGame").on("click", function(){
     alert("Let's Get Started!");
@@ -17,7 +19,7 @@ $(document).ready(function(){
     if(answersDoor == true){
       answersDoor = "Joel answers the door.";
     } else {
-      answersDoor = "They keep knocking so eventually Joel answers the door";
+      answersDoor = "They keep knocking until Joel answers the door";
     }
     $("#beginStory").append(answersDoor + "<br />");
     $("#actionBtn").on("click", function(){
